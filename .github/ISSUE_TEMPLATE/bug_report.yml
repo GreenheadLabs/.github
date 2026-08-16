@@ -1,0 +1,74 @@
+name: "🐛 Bug Report"
+description: "Report something that isn't working as expected."
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report!
+
+        ⚠️ **Do not report security vulnerabilities here.** Please follow our
+        [Security Policy](https://github.com/GreenheadLabs/.github/blob/main/SECURITY.md)
+        instead. Never share private keys, seed phrases, or secrets.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the bug.
+      placeholder: When I..., I expected..., but instead...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce the issue?
+      placeholder: |
+        1. Go to '...'
+        2. Run '...'
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: input
+    id: component
+    attributes:
+      label: Affected project / component
+      description: Which repo, service, contract, or network? (e.g. x402 API, XRPL mainnet)
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Versions, OS, network (mainnet/testnet), etc.
+      placeholder: |
+        - OS:
+        - Version / commit:
+        - Network:
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or transaction hashes
+      description: Paste logs or tx hashes. **Never include secrets or private keys.**
+      render: shell
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues and this is not a duplicate.
+          required: true
+        - label: This is not a security vulnerability (those go through the Security Policy).
+          required: true

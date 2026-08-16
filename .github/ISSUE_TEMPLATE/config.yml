@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/GreenheadLabs/.github/blob/main/SECURITY.md
+    about: Please report security issues privately — do NOT open a public issue.
+  - name: 💬 Questions & support
+    url: https://github.com/GreenheadLabs/.github/blob/main/SUPPORT.md
+    about: How to get help and ask general questions.
+  - name: 🌐 Greenhead Labs website
+    url: https://greenhead.io
+    about: Learn more about what we build.
